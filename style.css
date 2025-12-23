@@ -1,0 +1,434 @@
+/* ===========================================
+   Sykdomslære Quiz – Grunnleggende styling
+   Mobile-first, helsefaglig fargepalett
+   =========================================== */
+
+/* Variabler */
+:root {
+    --color-primary: #2a7d8c;
+    --color-primary-dark: #1e5f6b;
+    --color-secondary: #5a9ea8;
+    --color-accent: #48b5a0;
+
+    --color-bg: #f4f7f8;
+    --color-card: #ffffff;
+    --color-text: #2c3e50;
+    --color-text-light: #5d6d7e;
+    --color-border: #dce4e8;
+
+    --color-success: #27ae60;
+    --color-success-bg: #d4edda;
+    --color-error: #c0392b;
+    --color-error-bg: #f8d7da;
+
+    --radius: 8px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --transition: 200ms ease;
+}
+
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Utility */
+.hidden {
+    display: none !important;
+}
+
+/* Header */
+.app-header {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.app-header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+/* Main */
+.app-main {
+    flex: 1;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Views */
+.view {
+    animation: fadeIn 250ms ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.view h2 {
+    color: var(--color-primary-dark);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+}
+
+/* Forms */
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    background: white;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: border-color var(--transition);
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all var(--transition);
+    min-height: 48px;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: white;
+    width: 100%;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: var(--color-primary-dark);
+}
+
+.btn-secondary {
+    background: var(--color-bg);
+    color: var(--color-text);
+    border: 2px solid var(--color-border);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    border-color: var(--color-primary);
+    background: white;
+}
+
+.btn-secondary.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+/* Mode Buttons */
+.mode-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mode-buttons .btn {
+    flex: 1;
+}
+
+/* Quiz Header */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+}
+
+#quiz-timer {
+    background: var(--color-card);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+}
+
+/* Progress Bar */
+.progress-bar {
+    height: 6px;
+    background: var(--color-border);
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--color-accent);
+    border-radius: 3px;
+    width: 0%;
+    transition: width 300ms ease;
+}
+
+/* Question Card */
+.question-card {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.badge {
+    display: inline-block;
+    background: var(--color-secondary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.question-text {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Options */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.option-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--color-bg);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius);
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.option-btn:hover:not(:disabled) {
+    border-color: var(--color-primary);
+}
+
+.option-btn.selected {
+    border-color: var(--color-primary);
+    background: rgba(42, 125, 140, 0.1);
+}
+
+.option-btn.correct {
+    border-color: var(--color-success);
+    background: var(--color-success-bg);
+}
+
+.option-btn.incorrect {
+    border-color: var(--color-error);
+    background: var(--color-error-bg);
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+}
+
+.option-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    font-weight: 600;
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.option-btn.selected .option-letter {
+    background: var(--color-primary);
+    color: white;
+}
+
+.option-btn.correct .option-letter {
+    background: var(--color-success);
+    color: white;
+}
+
+.option-btn.incorrect .option-letter {
+    background: var(--color-error);
+    color: white;
+}
+
+/* Feedback */
+.feedback {
+    padding: 1rem;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+.feedback.correct {
+    background: var(--color-success-bg);
+    border: 1px solid var(--color-success);
+}
+
+.feedback.incorrect {
+    background: var(--color-error-bg);
+    border: 1px solid var(--color-error);
+}
+
+#feedback-text {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#feedback-explanation {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+}
+
+/* Quiz Actions */
+.quiz-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.quiz-actions .btn-primary {
+    flex: 1;
+}
+
+/* Score Display */
+.score-display {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.score-big {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.score-label {
+    color: var(--color-text-light);
+}
+
+/* Score Details */
+.score-details {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.detail {
+    text-align: center;
+}
+
+.detail span:first-child {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.detail span:last-child {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+/* Result Actions */
+.result-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Footer */
+.app-footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+    border-top: 1px solid var(--color-border);
+}
+
+/* Tablet+ */
+@media (min-width: 600px) {
+    .app-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .result-actions {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .result-actions .btn {
+        flex: 0 1 200px;
+    }
+}
