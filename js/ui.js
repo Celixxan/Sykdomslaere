@@ -125,7 +125,18 @@ const UI = {
         }
 
         const stats = Storage.getStats();
-        const catStats = stats[category] || { correct: 0, total: 0 };
+        let catStats;
+
+        if (category === 'all') {
+            // Sum alle kategorier
+            catStats = { correct: 0, total: 0 };
+            Object.values(stats).forEach(s => {
+                catStats.correct += s.correct || 0;
+                catStats.total += s.total || 0;
+            });
+        } else {
+            catStats = stats[category] || { correct: 0, total: 0 };
+        }
 
         if (catStats.total === 0) {
             this.elements.categoryStats.classList.add('hidden');

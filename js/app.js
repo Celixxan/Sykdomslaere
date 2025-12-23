@@ -33,6 +33,7 @@ const App = {
      */
     setupCategories() {
         const categories = [
+            { id: 'all', name: '📚 Alle kategorier' },
             { id: 'karsykdommer', name: 'Karsykdommer' },
             { id: 'hjertesykdommer', name: 'Hjertesykdommer' },
             { id: 'lungesykdommer', name: 'Lungesykdommer' },
@@ -118,6 +119,25 @@ const App = {
 
         // Default: treningsmodus
         UI.setModeButtons('training');
+
+        // Tastaturnavigasjon
+        document.addEventListener('keydown', (e) => {
+            if (AppState.currentView !== 'quiz') return;
+
+            // 1-4 for svaralternativer
+            if (e.key >= '1' && e.key <= '4') {
+                const index = parseInt(e.key) - 1;
+                const btn = el.optionsContainer.querySelector(`.option-btn[data-index="${index}"]`);
+                if (btn && !btn.disabled) {
+                    this.handleAnswer(btn);
+                }
+            }
+
+            // Enter for neste spørsmål
+            if (e.key === 'Enter' && !el.btnNext.classList.contains('hidden')) {
+                this.nextQuestion();
+            }
+        });
     },
 
     /**
