@@ -4,8 +4,79 @@
  */
 
 const QuizEngine = {
-    // Alle spørsmål (fylles ut i senere fase)
-    allQuestions: [],
+    // Dummy-spørsmål for testing (fase 2)
+    allQuestions: [
+        {
+            id: 'intro-1',
+            category: 'introduksjon',
+            difficulty: 'easy',
+            type: 'mcq',
+            question: 'Hva står NEWS2 for?',
+            options: [
+                'National Early Warning Score 2',
+                'Norwegian Emergency Warning System 2',
+                'Nurse Evaluation Warning Scale 2',
+                'National Emergency Ward Score 2'
+            ],
+            correctAnswer: 0,
+            explanation: 'NEWS2 (National Early Warning Score 2) er et standardisert scoringssystem for tidlig identifisering av akutt sykdom.'
+        },
+        {
+            id: 'intro-2',
+            category: 'introduksjon',
+            difficulty: 'easy',
+            type: 'truefalse',
+            question: 'Ved hjertestans skal man starte HLR umiddelbart.',
+            options: ['Sant', 'Usant'],
+            correctAnswer: 0,
+            explanation: 'Ved hjertestans er rask oppstart av HLR avgjørende for overlevelse. Hver minutt uten HLR reduserer sjansen for overlevelse med ca. 10%.'
+        },
+        {
+            id: 'intro-3',
+            category: 'introduksjon',
+            difficulty: 'medium',
+            type: 'mcq',
+            question: 'Hvilken NEWS2-score indikerer behov for umiddelbar klinisk vurdering?',
+            options: [
+                '1-4',
+                '5-6',
+                '7 eller høyere',
+                '0'
+            ],
+            correctAnswer: 2,
+            explanation: 'NEWS2-score på 7 eller høyere indikerer kritisk sykdom og behov for umiddelbar klinisk vurdering og tiltak.'
+        },
+        {
+            id: 'intro-4',
+            category: 'introduksjon',
+            difficulty: 'medium',
+            type: 'case',
+            question: 'En 68 år gammel mann kommer inn med brystsmerter, svetting og kvalme. Hva er første prioritet?',
+            options: [
+                'Ta EKG',
+                'Sikre frie luftveier og sjekke bevissthet',
+                'Gi smertestillende',
+                'Ringe pårørende'
+            ],
+            correctAnswer: 1,
+            explanation: 'ABCDE-prinsippet: Alltid sikre luftveier (A) og sjekke bevissthet først. Deretter kan man gå videre med undersøkelser som EKG.'
+        },
+        {
+            id: 'intro-5',
+            category: 'introduksjon',
+            difficulty: 'exam',
+            type: 'mcq',
+            question: 'Hvilken respiratorisk frekvens gir 3 poeng i NEWS2?',
+            options: [
+                '12-20/min',
+                '21-24/min',
+                '9-11/min',
+                '≤8 eller ≥25/min'
+            ],
+            correctAnswer: 3,
+            explanation: 'Respiratorisk frekvens ≤8 eller ≥25 per minutt gir 3 poeng i NEWS2, som indikerer alvorlig avvik fra normalverdier.'
+        }
+    ],
 
     /**
      * Filtrer spørsmål basert på kategori og vanskelighetsgrad

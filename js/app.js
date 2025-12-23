@@ -32,26 +32,10 @@ const App = {
      * Sett opp kategorier fra quiz-engine
      */
     setupCategories() {
-        // Placeholder kategorier (erstattes i fase 3)
+        // Kun kategorier med spørsmål vises (fase 2: kun introduksjon)
         const categories = [
-            { id: 'introduksjon', name: 'Introduksjon' },
-            { id: 'karsykdommer', name: 'Karsykdommer' },
-            { id: 'hjertesykdommer', name: 'Hjertesykdommer' },
-            { id: 'lungesykdommer', name: 'Lungesykdommer' },
-            { id: 'nyrer-urinveier', name: 'Nyrer og urinveier' },
-            { id: 'gastro', name: 'Gastro' },
-            { id: 'endokrinologi', name: 'Endokrinologi' },
-            { id: 'hematologi', name: 'Hematologi' },
-            { id: 'infeksjon', name: 'Infeksjon' },
-            { id: 'nevrologi', name: 'Nevrologi' },
-            { id: 'bevegelsesapparatet', name: 'Bevegelsesapparatet' },
-            { id: 'revmatologi', name: 'Revmatologi' },
-            { id: 'gynekologi-obstetrikk', name: 'Gynekologi/obstetrikk' },
-            { id: 'pediatri', name: 'Pediatri' },
-            { id: 'akuttmedisin', name: 'Akuttmedisin' },
-            { id: 'onkologi', name: 'Onkologi' },
-            { id: 'geriatri', name: 'Geriatri' },
-            { id: 'oyesykdommer', name: 'Øyesykdommer' }
+            { id: 'introduksjon', name: 'Introduksjon (5 spørsmål)' }
+            // Flere kategorier legges til i fase 3
         ];
 
         AppState.categories = categories;
@@ -135,7 +119,7 @@ const App = {
         const hasQuestions = QuizEngine.startQuiz(category, difficulty);
 
         if (!hasQuestions) {
-            alert('Ingen spørsmål tilgjengelig ennå. Kommer i fase 3!');
+            alert('Ingen spørsmål funnet for denne kombinasjonen av kategori og vanskelighetsgrad.');
             return;
         }
 
