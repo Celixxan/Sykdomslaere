@@ -45,5 +45,30 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Høy feber, sikling (svelgvansker), stridor og "tripod-stilling" er klassisk for epiglotitt. Dette er en livstruende tilstand som krever umiddelbar behandling. Ikke undersøk svelget!'
+    },
+    {
+        id: 'ped-4',
+        category: 'pediatri',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er typisk for falsk krupp (laryngitt)?',
+        options: [
+            'Høy feber og sikling',
+            'Bjeffende hoste, heshet og inspiratorisk stridor',
+            'Produktiv hoste med grønt ekspektorat',
+            'Utslett og leddsmerter'
+        ],
+        correctAnswer: 1,
+        explanation: 'Falsk krupp gir typisk bjeffende hoste (seal bark), heshet og inspiratorisk stridor. Ofte verre om natten. Mild feber. Behandles med fuktig luft og ev. steroider.'
+    },
+    {
+        id: 'ped-5',
+        category: 'pediatri',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Kapillær refill >2 sekunder hos barn kan indikere dårlig perifer sirkulasjon.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Kapillær refill-tid >2 sekunder indikerer nedsatt perifer sirkulasjon og kan være et tidlig tegn på sirkulatorisk svikt hos barn. Normal kapillær refill er <2 sekunder.'
     }
 );

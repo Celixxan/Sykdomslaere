@@ -45,5 +45,30 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Feber, takykardi, hypotensjon og endret mental status hos pasient med UVI indikerer urosepsis. Dette er en livstruende tilstand som krever akutt innleggelse og iv antibiotika.'
+    },
+    {
+        id: 'nyre-4',
+        category: 'nyrer-urinveier',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hvilken parameter er viktigst for å vurdere nyrefunksjon?',
+        options: [
+            'Urinmengde alene',
+            'eGFR (estimert glomerulær filtrasjonsrate)',
+            'Blodtrykk',
+            'Vekt'
+        ],
+        correctAnswer: 1,
+        explanation: 'eGFR beregnes fra kreatinin og gir et estimat på nyrefunksjon. CKD stadieinndeles etter eGFR. Urinmengde alene er ikke tilstrekkelig.'
+    },
+    {
+        id: 'nyre-5',
+        category: 'nyrer-urinveier',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Kronisk nyresykdom (CKD) stadium 5 betyr at pasienten trenger dialyse eller nyretransplantasjon.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'CKD stadium 5 (eGFR <15) kalles nyresvikt i endestadium. De fleste vil trenge nyreerstattende behandling (dialyse eller transplantasjon) for å overleve.'
     }
 );

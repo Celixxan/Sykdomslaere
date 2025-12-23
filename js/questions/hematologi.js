@@ -45,5 +45,30 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Plutselig dyspné, brystsmerter og hypoksi etter langvarig immobilisering (flyreise) er klassisk presentasjon av lungeemboli. Krever akutt utredning med D-dimer og CT-angio.'
+    },
+    {
+        id: 'hema-4',
+        category: 'hematologi',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er typiske symptomer på anemi?',
+        options: [
+            'Økt energi og rødme',
+            'Tretthet, blekhet og dyspné ved anstrengelse',
+            'Vektøkning og hevelser',
+            'Feber og frysninger'
+        ],
+        correctAnswer: 1,
+        explanation: 'Anemi gir redusert oksygentransport som fører til tretthet, blekhet, dyspné, hjertebank og svimmelhet, spesielt ved anstrengelse.'
+    },
+    {
+        id: 'hema-5',
+        category: 'hematologi',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Ved dyp venetrombose (DVT) i leggen er det alltid synlig hevelse og rødhet.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'DVT kan være asymptomatisk eller ha subtile symptomer. Mange tilfeller oppdages ikke før lungeemboli. Klinisk undersøkelse alene er utilstrekkelig for diagnose.'
     }
 );

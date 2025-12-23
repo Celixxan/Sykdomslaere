@@ -23,6 +23,10 @@ const UI = {
             btnTraining: document.getElementById('btn-training'),
             btnExam: document.getElementById('btn-exam'),
             btnStart: document.getElementById('btn-start'),
+            categoryStats: document.getElementById('category-stats'),
+            catStatAttempts: document.getElementById('cat-stat-attempts'),
+            catStatPercent: document.getElementById('cat-stat-percent'),
+            catStatFill: document.getElementById('cat-stat-fill'),
 
             // Quiz
             quizProgress: document.getElementById('quiz-progress'),
@@ -109,6 +113,31 @@ const UI = {
     updateStartButton() {
         const hasCategory = this.elements.categorySelect.value !== '';
         this.elements.btnStart.disabled = !hasCategory;
+    },
+
+    /**
+     * Vis kategori-statistikk
+     */
+    showCategoryStats(category) {
+        if (!category) {
+            this.elements.categoryStats.classList.add('hidden');
+            return;
+        }
+
+        const stats = Storage.getStats();
+        const catStats = stats[category] || { correct: 0, total: 0 };
+
+        if (catStats.total === 0) {
+            this.elements.categoryStats.classList.add('hidden');
+            return;
+        }
+
+        const percent = Math.round((catStats.correct / catStats.total) * 100);
+
+        this.elements.catStatAttempts.textContent = catStats.total;
+        this.elements.catStatPercent.textContent = `${percent}%`;
+        this.elements.catStatFill.style.width = `${percent}%`;
+        this.elements.categoryStats.classList.remove('hidden');
     },
 
     /**

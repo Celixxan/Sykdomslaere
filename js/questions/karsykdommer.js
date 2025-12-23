@@ -45,5 +45,30 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Blodtrykk >180/120 mmHg med symptomer som hodepine og synsforstyrrelser indikerer hypertensiv krise med organpåvirkning. Dette krever akutt innleggelse og behandling.'
+    },
+    {
+        id: 'kar-4',
+        category: 'karsykdommer',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hvilken livsstilsfaktor er viktigst å adressere ved hypertensjon?',
+        options: [
+            'Redusere koffeininntak',
+            'Redusere saltinntak og øke fysisk aktivitet',
+            'Spise mer kjøtt',
+            'Sove mindre'
+        ],
+        correctAnswer: 1,
+        explanation: 'Saltreduksjon, vektreduksjon, økt fysisk aktivitet og redusert alkoholinntak er de viktigste livsstilstiltakene ved hypertensjon.'
+    },
+    {
+        id: 'kar-5',
+        category: 'karsykdommer',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Varicer (åreknuter) oppstår kun i bena.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'Varicer kan oppstå flere steder, inkludert øsofagus (øsofagusvaricer ved portal hypertensjon), rectum (hemoroider) og scrotum (varicocele).'
     }
 );

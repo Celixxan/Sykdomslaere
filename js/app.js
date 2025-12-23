@@ -75,6 +75,7 @@ const App = {
         el.categorySelect.addEventListener('change', () => {
             AppState.selectedCategory = el.categorySelect.value;
             UI.updateStartButton();
+            UI.showCategoryStats(el.categorySelect.value);
         });
 
         // Vanskelighetsgrad

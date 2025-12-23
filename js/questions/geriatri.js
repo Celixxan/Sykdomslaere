@@ -45,5 +45,30 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Akutt forvirringsendring hos eldre med demens er delir inntil motsatt er bevist. UVI er en vanlig utløser. Behandling av underliggende årsak (infeksjon) er viktigst.'
+    },
+    {
+        id: 'geriatri-4',
+        category: 'geriatri',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er polyfarmasi?',
+        options: [
+            'Bruk av kun ett legemiddel',
+            'Bruk av mange legemidler samtidig',
+            'Allergi mot legemidler',
+            'Mangel på legemidler'
+        ],
+        correctAnswer: 1,
+        explanation: 'Polyfarmasi defineres ofte som bruk av 5+ legemidler. Vanlig hos eldre og øker risiko for bivirkninger, interaksjoner og dårlig compliance. Regelmessig legemiddelgjennomgang er viktig.'
+    },
+    {
+        id: 'geriatri-5',
+        category: 'geriatri',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Fall hos eldre er alltid forårsaket av klossete oppførsel og kan ikke forebygges.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'Fall hos eldre har ofte flere årsaker: legemidler, synssvekkelse, muskelsvakhet, delirium, miljøfaktorer. Systematisk fallforebygging kan redusere fallrisiko betydelig.'
     }
 );

@@ -45,5 +45,30 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 2,
         explanation: 'Febril nøytropeni (feber + nøytrofile <0,5) er en akutt, potensielt livstruende tilstand. Krever øyeblikkelig innleggelse og bredspektret antibiotika innen 1 time.'
+    },
+    {
+        id: 'onko-4',
+        category: 'onkologi',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er TNM-systemet?',
+        options: [
+            'En type cellegift',
+            'Et klassifikasjonssystem for kreftstadium',
+            'En blodprøve for kreftmarkører',
+            'En type strålebehandling'
+        ],
+        correctAnswer: 1,
+        explanation: 'TNM-systemet beskriver kreftstadium: T (tumorstørrelse), N (lymfeknutespredning), M (fjernmetastaser). Viktig for behandlingsvalg og prognose.'
+    },
+    {
+        id: 'onko-5',
+        category: 'onkologi',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Alle kreftpasienter med smerter bør få tilbud om adekvat smertelindring, inkludert opioider om nødvendig.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'God smertelindring er en grunnleggende rettighet. WHOs smertetrapp brukes, og opioider skal ikke holdes tilbake av frykt for avhengighet hos kreftpasienter med smerter.'
     }
 );

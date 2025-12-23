@@ -445,6 +445,54 @@ select:focus {
     outline: none;
 }
 
+/* Category Stats */
+.category-stats {
+    margin-top: 1.5rem;
+}
+
+.category-stats h3 {
+    font-size: 1rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+}
+
+.stats-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item span:first-child {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.stat-item span:last-child {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+}
+
+.stats-bar {
+    height: 8px;
+    background: var(--color-border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.stats-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-primary) 100%);
+    border-radius: 4px;
+    width: 0%;
+    transition: width 400ms ease;
+}
+
 /* Tablet+ */
 @media (min-width: 600px) {
     .app-header h1 {

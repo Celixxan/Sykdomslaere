@@ -45,5 +45,50 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'INR >5 uten blødning behandles med seponering av warfarin og lavdose vitamin K (1-2,5 mg per os). Protrombinkompleks reserveres for alvorlig blødning.'
+    },
+    {
+        id: 'hjerte-4',
+        category: 'hjertesykdommer',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er typisk lokalisasjon for smerter ved angina pectoris?',
+        options: [
+            'Høyre side av brystet',
+            'Retrosternalt med utstråling til venstre arm/kjeve',
+            'Nedre del av magen',
+            'Kun i ryggen'
+        ],
+        correctAnswer: 1,
+        explanation: 'Angina gir typisk retrosternale (bak brystbeinet) smerter som kan stråle til venstre arm, kjeve, rygg eller epigastriet. Ofte utløst av anstrengelse.'
+    },
+    {
+        id: 'hjerte-5',
+        category: 'hjertesykdommer',
+        difficulty: 'medium',
+        type: 'case',
+        question: 'En pasient med hjertesvikt har tatt på seg 3 kg på 3 dager og har økte ødemer. Hva tyder dette på?',
+        options: [
+            'Pasienten spiser for mye',
+            'Væskeretensjon og forverring av hjertesvikt',
+            'Normal vektøkning',
+            'Muskeloppbygging'
+        ],
+        correctAnswer: 1,
+        explanation: 'Rask vektøkning (>2 kg/uke) hos hjertesviktpasient indikerer væskeretensjon. Pasienten bør kontakte lege for vurdering av diuretikabehandling.'
+    },
+    {
+        id: 'hjerte-6',
+        category: 'hjertesykdommer',
+        difficulty: 'exam',
+        type: 'mcq',
+        question: 'Hvilken EKG-forandring er mest typisk for akutt STEMI?',
+        options: [
+            'Forlenget QT-tid',
+            'ST-elevasjon i sammenhengende avledninger',
+            'Kun inverterte T-bølger',
+            'Normalfunn på EKG'
+        ],
+        correctAnswer: 1,
+        explanation: 'STEMI (ST-elevasjonsinfarkt) viser ST-elevasjon i minst 2 sammenhengende avledninger. Dette indikerer transmural iskemi og krever akutt reperfusjonsbehandling (PCI eller trombolyse).'
     }
 );

@@ -45,5 +45,45 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Plutselig halvsidig lammelse og taleproblemer er klassisk hjerneslag. Innen 4,5 timer kan trombolyse være aktuelt. CT utelukker blødning før behandling.'
+    },
+    {
+        id: 'nevro-4',
+        category: 'nevrologi',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er FAST-testen brukt til?',
+        options: [
+            'Vurdering av blodtrykk',
+            'Rask identifisering av hjerneslag',
+            'Testing av hjertefunksjon',
+            'Måling av blodsukker'
+        ],
+        correctAnswer: 1,
+        explanation: 'FAST: Face (ansiktslammelse), Arm (armsvakhet), Speech (talevansker), Time (ring 113). Brukes for rask identifisering av hjerneslag i prehospital setting.'
+    },
+    {
+        id: 'nevro-5',
+        category: 'nevrologi',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Status epilepticus defineres som vedvarende anfall >5 minutter eller gjentatte anfall uten oppvåkning.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Status epilepticus er en akutt, livstruende tilstand med vedvarende anfall >5 min eller gjentatte anfall uten full restitusjon. Krever umiddelbar behandling med benzodiazepiner.'
+    },
+    {
+        id: 'nevro-6',
+        category: 'nevrologi',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er de tre komponentene i Glasgow Coma Scale (GCS)?',
+        options: [
+            'Puls, blodtrykk og respirasjon',
+            'Øyeåpning, verbal respons og motorisk respons',
+            'Pupillreaksjon, smertereaksjon og tale',
+            'Bevissthet, hukommelse og orientering'
+        ],
+        correctAnswer: 1,
+        explanation: 'GCS måler bevissthetsnivå via tre komponenter: Eye (øyeåpning, 1-4), Verbal (verbal respons, 1-5), Motor (motorisk respons, 1-6). Totalt 3-15 poeng.'
     }
 );

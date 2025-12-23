@@ -45,5 +45,30 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Amenoré >12 måneder hos kvinne >45 år, kombinert med vasomotoriske symptomer (hetetokter, svette) og urogenitale plager, indikerer menopause.'
+    },
+    {
+        id: 'gyn-4',
+        category: 'gynekologi-obstetrikk',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er preeklampsi?',
+        options: [
+            'Lavt blodtrykk i svangerskapet',
+            'Hypertensjon og proteinuri etter uke 20 i svangerskapet',
+            'Diabetes i svangerskapet',
+            'Kvalme tidlig i svangerskapet'
+        ],
+        correctAnswer: 1,
+        explanation: 'Preeklampsi er svangerskapsforgiftning med hypertensjon (≥140/90) og proteinuri etter uke 20. Kan utvikles til eklampsi med kramper. Krever tett oppfølging.'
+    },
+    {
+        id: 'gyn-5',
+        category: 'gynekologi-obstetrikk',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Ektopisk graviditet (utenforlivmor svangerskap) er alltid lokalisert i egglederen.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'Ca. 95% av ektopiske svangerskap er i egglederen, men de kan også forekomme i ovariet, cervix, bukhulen eller tidligere keisersnittarr.'
     }
 );

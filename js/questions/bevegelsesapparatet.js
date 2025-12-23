@@ -45,5 +45,30 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Fall på utstrakt hånd hos eldre gir typisk Colles-fraktur: distalt radiusbrudd med dorsal vinkling ("gaffeldeformitet"). Vanligste bruddtype hos eldre kvinner med osteoporose.'
+    },
+    {
+        id: 'bevegelse-4',
+        category: 'bevegelsesapparatet',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er kompartmentsyndrom?',
+        options: [
+            'En type muskelkrampe',
+            'Økt trykk i lukket muskellosje som truer sirkulasjonen',
+            'Infeksjon i ledd',
+            'Brudd i flere ben samtidig'
+        ],
+        correctAnswer: 1,
+        explanation: 'Kompartmentsyndrom er en akutt tilstand med økt trykk i muskellosje som kompromitterer blodtilførsel og nervefunksjon. Krever akutt fasciotomi for å unngå permanent skade.'
+    },
+    {
+        id: 'bevegelse-5',
+        category: 'bevegelsesapparatet',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Ved ankelbrudd er det alltid nødvendig med operasjon.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'Mange stabile ankelbrudd kan behandles konservativt med gips/ortose. Ustabile brudd med feilstilling eller leddpåvirkning krever kirurgi. Behandlingen avhenger av bruddtype.'
     }
 );

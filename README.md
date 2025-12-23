@@ -4,11 +4,35 @@ Quiz-webapp for eksamensforberedelse i sykdomslære – laget for sykepleiestude
 
 ## Funksjoner
 
-- **Kategoribasert quiz** – velg mellom 18 fagområder
+- **91 spørsmål** – fordelt på 17 kategorier
+- **Tre spørsmålstyper** – flervalg, sant/usant og kasus
 - **Vanskelighetsgrader** – lett, medium, eksamen
-- **Treningsmodus** – umiddelbar feedback og forklaringer
-- **Eksamensmodus** – tidsbegrenset, ingen tilbakemelding før slutt
-- **Poenglagring** – lokal lagring av resultater
+- **Treningsmodus** – umiddelbar feedback med forklaringer
+- **Eksamensmodus** – 20 min tidsbegrensning, ingen tilbakemelding før slutt
+- **Progresjonsstatistikk** – se din fremgang per kategori
+- **Lokal lagring** – resultater og statistikk lagres i nettleseren
+
+## Kategorier
+
+| Kategori | Spørsmål |
+|----------|----------|
+| Karsykdommer | 5 |
+| Hjertesykdommer | 6 |
+| Lungesykdommer | 6 |
+| Nyrer og urinveier | 5 |
+| Gastro | 6 |
+| Endokrinologi | 5 |
+| Hematologi | 5 |
+| Infeksjon | 6 |
+| Nevrologi | 6 |
+| Bevegelsesapparatet | 5 |
+| Revmatologi | 5 |
+| Gynekologi/obstetrikk | 5 |
+| Pediatri | 5 |
+| Akuttmedisin | 6 |
+| Onkologi | 5 |
+| Geriatri | 5 |
+| Øyesykdommer | 5 |
 
 ## Kjøre lokalt
 
@@ -55,23 +79,27 @@ npx serve .
     ├── quiz-engine.js # Quiz-logikk
     ├── ui.js         # DOM-manipulasjon
     ├── app.js        # Initialisering og event-binding
-    └── /questions    # Spørsmålsdata per kategori
+    └── /questions    # 17 spørsmålsfiler (én per kategori)
 ```
-
-## Roadmap
-
-- [x] **Fase 1:** Prosjektstruktur og UI-skjelett
-- [ ] **Fase 2:** State management og quiz-motor
-- [ ] **Fase 3:** Spørsmålsdata (90+ spørsmål)
-- [ ] **Fase 4:** Eksamensmodus med timer
-- [ ] **Fase 5:** Statistikk og localStorage
 
 ## Teknologi
 
 - Vanilla HTML/CSS/JavaScript
 - Ingen rammeverk eller build-verktøy
 - Mobile-first responsive design
+- LocalStorage for persistens
 - Netlify for hosting
+
+## Medisinsk innhold
+
+Spørsmålene dekker sentrale temaer for sykepleie:
+
+- ABCDE-prinsipper for akutt vurdering
+- qSOFA og NEWS2 for sepsis/forverring
+- Glasgow Coma Scale (GCS)
+- Kliniske kasuistikker
+- Patofysiologi og symptomer
+- Akuttbehandling og førstehjelp
 
 ---
 

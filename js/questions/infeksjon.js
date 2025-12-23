@@ -45,5 +45,45 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Infeksjon med hypotensjon som ikke responderer på væske, samt forhøyet laktat (>2), definerer septisk sjokk. Krever umiddelbar væskeresuscitering, antibiotika og ofte vasopressor.'
+    },
+    {
+        id: 'infeksjon-4',
+        category: 'infeksjon',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er "golden hour" ved sepsis?',
+        options: [
+            'Tiden pasienten kan vente før behandling',
+            'Den første timen hvor rask behandling er livsviktig',
+            'Tiden det tar før antibiotika virker',
+            'Tiden mellom blodprøver'
+        ],
+        correctAnswer: 1,
+        explanation: 'Ved sepsis er den første timen kritisk. Antibiotika skal gis innen 1 time, og væskeresuscitering startes umiddelbart. Forsinkelse øker mortaliteten betydelig.'
+    },
+    {
+        id: 'infeksjon-5',
+        category: 'infeksjon',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'CRP er en spesifikk markør som skiller bakteriell infeksjon fra viral.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'CRP stiger ved inflammasjon generelt, både bakteriell og viral. Det er ikke spesifikt for bakteriell infeksjon. Procalcitonin er mer spesifikk for bakterielle infeksjoner.'
+    },
+    {
+        id: 'infeksjon-6',
+        category: 'infeksjon',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er viktigste tiltak for å forebygge sykehusinfeksjoner?',
+        options: [
+            'Bruk av bredspektret antibiotika til alle',
+            'God håndhygiene',
+            'Isolering av alle pasienter',
+            'Daglig skifte av alle katetre'
+        ],
+        correctAnswer: 1,
+        explanation: 'Håndhygiene er det viktigste enkelttiltak for å forebygge smittespredning i helsetjenesten. Hånddesinfeksjon eller håndvask skal utføres før og etter pasientkontakt.'
     }
 );

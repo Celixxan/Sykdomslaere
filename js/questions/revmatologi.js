@@ -45,5 +45,30 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Symmetrisk polyartritt i små ledd, langvarig morgenstivhet og forhøyede inflammasjonsmarkører hos ung kvinne er klassisk for revmatoid artritt. Krever revmatologisk vurdering.'
+    },
+    {
+        id: 'revma-4',
+        category: 'revmatologi',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hvilke ledd er typisk affisert ved artrose?',
+        options: [
+            'MCP-ledd (knokene)',
+            'Store vektbærende ledd som hofter og knær',
+            'Kun ryggsøylen',
+            'Kun håndledd'
+        ],
+        correctAnswer: 1,
+        explanation: 'Artrose rammer typisk store vektbærende ledd (hofter, knær) samt fingerledd (DIP, CMC-1). MCP-ledd er sjeldent affisert (i motsetning til RA).'
+    },
+    {
+        id: 'revma-5',
+        category: 'revmatologi',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Urinsyre forårsaker urinsyregikt (podagra) når nivået i blodet er forhøyet.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Urinsyregikt skyldes utfelling av urinsyrekrystaller i ledd ved hyperurikemi. Gir typisk akutte, svært smertefulle anfall, ofte i stortåens grunnledd (podagra).'
     }
 );
