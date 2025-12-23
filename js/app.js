@@ -164,10 +164,11 @@ const App = {
 
         // Vis feedback (kun treningsmodus)
         if (AppState.mode === 'training') {
-            UI.showFeedback(result.isCorrect, result.correctAnswer, result.explanation);
+            UI.renderFeedback(result.isCorrect, result.correctAnswer, result.explanation);
         } else {
-            // Eksamensmodus: gå direkte videre
-            setTimeout(() => this.nextQuestion(), 300);
+            // Eksamensmodus: deaktiver knapper og gå videre
+            UI.disableOptions();
+            setTimeout(() => this.nextQuestion(), 400);
         }
     },
 
