@@ -4,11 +4,13 @@ Quiz-webapp for eksamensforberedelse i sykdomslære – laget for sykepleiestude
 
 ## Funksjoner
 
-- **204 spørsmål** – fordelt på 17 kategorier (12 per kategori)
+- **228 spørsmål** – fordelt på 19 kategorier (12 per kategori)
 - **Tre spørsmålstyper** – flervalg, sant/usant og kasus
 - **Vanskelighetsgrader** – lett, medium, eksamen
 - **Treningsmodus** – umiddelbar feedback med forklaringer
 - **Eksamensmodus** – 20 min tidsbegrensning, ingen tilbakemelding før slutt
+- **Gjennomgang av feil** – se hvilke spørsmål du svarte feil på med forklaringer
+- **Mørk modus** – øyevennlig for kveldslesing
 - **Progresjonsstatistikk** – se din fremgang per kategori
 - **Lokal lagring** – resultater og statistikk lagres i nettleseren
 
@@ -33,6 +35,8 @@ Quiz-webapp for eksamensforberedelse i sykdomslære – laget for sykepleiestude
 | Onkologi | 12 |
 | Geriatri | 12 |
 | Øyesykdommer | 12 |
+| Farmakologi | 12 |
+| Psykisk helse | 12 |
 
 ## Kjøre lokalt
 

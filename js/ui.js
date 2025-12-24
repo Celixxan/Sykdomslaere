@@ -16,6 +16,7 @@ const UI = {
             setupView: document.getElementById('setup-view'),
             quizView: document.getElementById('quiz-view'),
             resultView: document.getElementById('result-view'),
+            reviewView: document.getElementById('review-view'),
 
             // Setup
             categorySelect: document.getElementById('category-select'),
@@ -49,7 +50,15 @@ const UI = {
             scoreTotal: document.getElementById('score-total'),
             resultMessage: document.getElementById('result-message'),
             btnRetry: document.getElementById('btn-retry'),
-            btnBack: document.getElementById('btn-back')
+            btnBack: document.getElementById('btn-back'),
+            btnReview: document.getElementById('btn-review'),
+
+            // Review
+            reviewList: document.getElementById('review-list'),
+            btnBackReview: document.getElementById('btn-back-review'),
+
+            // Dark mode
+            btnDarkMode: document.getElementById('btn-dark-mode')
         };
 
         console.log('[ui.js] Elements cached');
@@ -59,7 +68,7 @@ const UI = {
      * Vis en spesifikk view, skjul andre
      */
     showView(viewName) {
-        const views = ['setup', 'quiz', 'result'];
+        const views = ['setup', 'quiz', 'result', 'review'];
         views.forEach(v => {
             const el = this.elements[`${v}View`];
             if (el) {
@@ -321,6 +330,74 @@ const UI = {
         setTimeout(() => {
             this.elements.scorePercent.focus();
         }, 100);
+    },
+
+    /**
+     * Vis/skjul gjennomgang-knapp basert på feil svar
+     */
+    showReviewButton(hasWrongAnswers) {
+        if (hasWrongAnswers) {
+            this.elements.btnReview.classList.remove('hidden');
+        } else {
+            this.elements.btnReview.classList.add('hidden');
+        }
+    },
+
+    /**
+     * Render feil svar for gjennomgang
+     */
+    renderReview(wrongAnswers) {
+        const container = this.elements.reviewList;
+        container.innerHTML = '';
+
+        if (wrongAnswers.length === 0) {
+            container.innerHTML = '<p class="card">Ingen feil svar å vise!</p>';
+            return;
+        }
+
+        wrongAnswers.forEach((item, index) => {
+            const letters = ['A', 'B', 'C', 'D', 'E'];
+            const div = document.createElement('div');
+            div.className = 'review-item';
+            div.innerHTML = `
+                <p class="review-question">${index + 1}. ${item.question.question}</p>
+                <div class="review-answers">
+                    <div class="review-answer your-answer">
+                        Ditt svar: ${letters[item.givenAnswer]}. ${item.question.options[item.givenAnswer]}
+                    </div>
+                    <div class="review-answer correct-answer">
+                        Riktig svar: ${letters[item.correctAnswer]}. ${item.question.options[item.correctAnswer]}
+                    </div>
+                </div>
+                <div class="review-explanation">
+                    <strong>Forklaring:</strong>
+                    ${item.question.explanation}
+                </div>
+            `;
+            container.appendChild(div);
+        });
+    },
+
+    /**
+     * Bytt mørk/lys modus
+     */
+    toggleDarkMode() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const newTheme = isDark ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    },
+
+    /**
+     * Last inn lagret tema
+     */
+    loadTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
     }
 };
 

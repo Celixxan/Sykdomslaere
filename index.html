@@ -9,8 +9,14 @@
 </head>
 <body>
     <header class="app-header">
-        <h1>Sykdomslære – Quiz</h1>
-        <p class="subtitle">Eksamensforberedelse for sykepleie</p>
+        <div class="header-content">
+            <h1>Sykdomslære – Quiz</h1>
+            <p class="subtitle">Eksamensforberedelse for sykepleie</p>
+        </div>
+        <button id="btn-dark-mode" class="btn-icon" aria-label="Bytt tema">
+            <span class="icon-light">☀️</span>
+            <span class="icon-dark">🌙</span>
+        </button>
     </header>
 
     <main class="app-main">
@@ -121,8 +127,20 @@
             <div id="result-message" class="card"></div>
 
             <div class="result-actions">
+                <button id="btn-review" class="btn btn-secondary hidden">Se feil svar</button>
                 <button id="btn-retry" class="btn btn-primary">Prøv igjen</button>
                 <button id="btn-back" class="btn btn-secondary">Tilbake</button>
+            </div>
+        </section>
+
+        <!-- VIEW 4: Review Wrong Answers -->
+        <section id="review-view" class="view hidden">
+            <h2>Gjennomgang av feil</h2>
+            <div id="review-list" class="review-list">
+                <!-- Feil svar fylles inn av JS -->
+            </div>
+            <div class="result-actions">
+                <button id="btn-back-review" class="btn btn-secondary">Tilbake til resultater</button>
             </div>
         </section>
     </main>
@@ -153,6 +171,8 @@
     <script src="js/questions/onkologi.js"></script>
     <script src="js/questions/geriatri.js"></script>
     <script src="js/questions/oyesykdommer.js"></script>
+    <script src="js/questions/farmakologi.js"></script>
+    <script src="js/questions/psykisk-helse.js"></script>
 
     <script src="js/quiz-engine.js"></script>
     <script src="js/ui.js"></script>

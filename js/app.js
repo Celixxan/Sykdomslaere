@@ -6,12 +6,16 @@
 
 const App = {
     timerInterval: null,
+    lastResults: null,
 
     /**
      * Initialiser applikasjonen
      */
     init() {
         console.log('[app.js] Initializing...');
+
+        // Last inn tema først
+        UI.loadTheme();
 
         // Cache DOM-elementer
         UI.init();
@@ -50,7 +54,9 @@ const App = {
             { id: 'akuttmedisin', name: 'Akuttmedisin' },
             { id: 'onkologi', name: 'Onkologi' },
             { id: 'geriatri', name: 'Geriatri' },
-            { id: 'oyesykdommer', name: 'Øyesykdommer' }
+            { id: 'oyesykdommer', name: 'Øyesykdommer' },
+            { id: 'farmakologi', name: 'Farmakologi' },
+            { id: 'psykisk-helse', name: 'Psykisk helse' }
         ];
 
         AppState.categories = categories;
@@ -115,6 +121,21 @@ const App = {
         // Tilbake til setup
         el.btnBack.addEventListener('click', () => {
             UI.showView('setup');
+        });
+
+        // Gjennomgang av feil svar
+        el.btnReview.addEventListener('click', () => {
+            this.showReview();
+        });
+
+        // Tilbake fra gjennomgang
+        el.btnBackReview.addEventListener('click', () => {
+            UI.showView('result');
+        });
+
+        // Mørk modus
+        el.btnDarkMode.addEventListener('click', () => {
+            UI.toggleDarkMode();
         });
 
         // Default: treningsmodus
@@ -233,6 +254,9 @@ const App = {
         // Hent resultater
         const results = QuizEngine.getResults();
 
+        // Lagre resultater for gjennomgang
+        this.lastResults = results;
+
         // Lagre
         Storage.saveResult({
             category: AppState.selectedCategory,
@@ -245,7 +269,31 @@ const App = {
 
         // Vis resultater
         UI.renderResults(results);
+        UI.showReviewButton(results.wrong > 0);
         UI.showView('result');
+    },
+
+    /**
+     * Vis gjennomgang av feil svar
+     */
+    showReview() {
+        if (!this.lastResults) return;
+
+        const wrongAnswers = [];
+        const { questions, answers } = this.lastResults;
+
+        answers.forEach((answer, index) => {
+            if (!answer.isCorrect) {
+                wrongAnswers.push({
+                    question: questions[index],
+                    givenAnswer: answer.givenAnswer,
+                    correctAnswer: answer.correctAnswer
+                });
+            }
+        });
+
+        UI.renderReview(wrongAnswers);
+        UI.showView('review');
     },
 
     /**
