@@ -85,5 +85,85 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 2,
         explanation: 'Lav pO2 (<8 kPa) + høy pCO2 (>6 kPa) = type 2 respirasjonssvikt. Pasienten kan ikke ventilere ut nok CO2. Krever ofte NIV (non-invasiv ventilasjon) ved KOLS-forverring.'
+    },
+    {
+        id: 'lunge-7',
+        category: 'lungesykdommer',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hvilken inhalator brukes som anfallsmedisin ved astma?',
+        options: [
+            'Inhalasjonssteroid (f.eks. budesonid)',
+            'Korttidsvirkende beta-2-agonist (f.eks. salbutamol)',
+            'Langtidsvirkende antikolinergika',
+            'Antibiotika på inhalator'
+        ],
+        correctAnswer: 1,
+        explanation: 'SABA (korttidsvirkende beta-2-agonist) som salbutamol (Ventoline) er anfallsmedisin. Gir rask bronkodilaterende effekt. Inhalasjonssteroid er vedlikeholdsbehandling.'
+    },
+    {
+        id: 'lunge-8',
+        category: 'lungesykdommer',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Spirometri som viser FEV1/FVC <0,7 etter bronkodilatator er diagnostisk for KOLS.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'FEV1/FVC-ratio <0,7 (70%) etter bronkodilatator bekrefter obstruktiv lungesykdom. Ved KOLS er obstruksjonen ikke fullt reversibel, i motsetning til astma.'
+    },
+    {
+        id: 'lunge-9',
+        category: 'lungesykdommer',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En ung mann får plutselig brystsmerter og dyspné. Han er høy og slank. Røntgen viser luft i pleurahulen. Diagnose?',
+        options: [
+            'Pneumoni',
+            'Spontan pneumothorax',
+            'Lungeemboli',
+            'Pleuravæske'
+        ],
+        correctAnswer: 1,
+        explanation: 'Spontan pneumothorax rammer typisk høye, slanke unge menn. Luft i pleurahulen kollapser lungen. Behandles med observasjon, nåleaspirasjon eller thoraxdren avhengig av størrelse.'
+    },
+    {
+        id: 'lunge-10',
+        category: 'lungesykdommer',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er typiske symptomer ved lungeemboli?',
+        options: [
+            'Kun hoste',
+            'Plutselig dyspné, brystsmerter og takykardi',
+            'Langsom utvikling av hevelse i bena',
+            'Feber over flere uker'
+        ],
+        correctAnswer: 1,
+        explanation: 'Lungeemboli gir ofte plutselig dyspné, pleuritiske brystsmerter, takykardi og evt. hemoptyse. Kan være livstruende. D-dimer og CT-angiografi brukes i diagnostikk.'
+    },
+    {
+        id: 'lunge-11',
+        category: 'lungesykdommer',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Røykeslutt er det viktigste enkelttiltaket for å bremse KOLS-progresjon.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Røykeslutt er eneste tiltak som er bevist å bremse lungefunksjonstapet ved KOLS. Inhalatorer lindrer symptomer, men påvirker ikke sykdomsprogresjonen like mye.'
+    },
+    {
+        id: 'lunge-12',
+        category: 'lungesykdommer',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En pasient med KOLS har feber, grønt ekspektorat og forverret dyspné. CRP er forhøyet. Hva er behandlingen?',
+        options: [
+            'Kun øke inhalatordosen',
+            'Antibiotika, prednisolon og bronkodilatator',
+            'Avvente og se an',
+            'Kun paracetamol'
+        ],
+        correctAnswer: 1,
+        explanation: 'Infeksiøs KOLS-forverring behandles med antibiotika (ofte amoksicillin eller doksysyklin), peroral prednisolon-kur og intensivert bronkodilaterende behandling.'
     }
 );

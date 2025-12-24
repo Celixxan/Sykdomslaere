@@ -70,5 +70,100 @@ window.QuizQuestions.push(
         options: ['Sant', 'Usant'],
         correctAnswer: 0,
         explanation: 'Kapillær refill-tid >2 sekunder indikerer nedsatt perifer sirkulasjon og kan være et tidlig tegn på sirkulatorisk svikt hos barn. Normal kapillær refill er <2 sekunder.'
+    },
+    {
+        id: 'ped-6',
+        category: 'pediatri',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er dehydreringsgrad ved inndragne øyne, nedsatt hudturgor og irritabilitet hos barn?',
+        options: [
+            'Lett dehydrering (3-5%)',
+            'Moderat dehydrering (6-9%)',
+            'Alvorlig dehydrering (>10%)',
+            'Ingen dehydrering'
+        ],
+        correctAnswer: 1,
+        explanation: 'Inndragne øyne, nedsatt hudturgor og irritabilitet tyder på moderat dehydrering (6-9%). Alvorlig dehydrering gir slapphet, svært nedsatt turgor og sirkulatorisk påvirkning.'
+    },
+    {
+        id: 'ped-7',
+        category: 'pediatri',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Feberkramper er vanligvis godartede og krever sjelden langvarig behandling.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Simple feberkramper (kort, generalisert, ett anfall per feberepisode) er godartede. De fleste barn trenger ingen langtidsbehandling, men foreldrene trenger informasjon og trygghet.'
+    },
+    {
+        id: 'ped-8',
+        category: 'pediatri',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'Et spedbarn på 6 uker har eksplosive grønne avføringer, sprutbrekninger etter måltid og dårlig vektøpptgang. Hva vurderes?',
+        options: [
+            'Normal spising',
+            'Kumelkproteinallergi eller pylorusstenose',
+            'Obstipasjon',
+            'For mye mat'
+        ],
+        correctAnswer: 1,
+        explanation: 'Sprutbrekninger + dårlig trivsel hos spedbarn: vurder pylorusstenose (projectile vomiting, metabolsk alkalose). Grønne avføringer kan indikere kumelkproteinallergi.'
+    },
+    {
+        id: 'ped-9',
+        category: 'pediatri',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er typisk for RS-virus bronkiolitt hos spedbarn?',
+        options: [
+            'Kun feber uten respirasjonsproblemer',
+            'Pipende respirasjon, nesefløyten, inndragninger og spiseproblemer',
+            'Diaré og oppkast',
+            'Utslett over hele kroppen'
+        ],
+        correctAnswer: 1,
+        explanation: 'RSV-bronkiolitt gir typisk tett nese, hoste, pipende respirasjon, inndragninger og ernæringsvansker. Vanligst hos barn <12 måneder. Kan kreve sykehusinnleggelse.'
+    },
+    {
+        id: 'ped-10',
+        category: 'pediatri',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Barn kan ha bakteriemi uten tydelig infeksjonsfokus.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Okkult bakteriemi kan forekomme hos febrile barn, spesielt de under 3 år. Vurdering av alvorlighetsgrad er viktig. Alvorlig syke barn krever bred utredning.'
+    },
+    {
+        id: 'ped-11',
+        category: 'pediatri',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'Et barn på 4 år har feber, ensidig halssmerte, trismus og asymmetrisk tonsiller. Diagnose?',
+        options: [
+            'Vanlig tonsillitt',
+            'Peritonsillær abscess',
+            'Mononukleose',
+            'Falsk krupp'
+        ],
+        correctAnswer: 1,
+        explanation: 'Ensidig halssmerte, trismus (begrenset gapeevne), asymmetriske tonsiller og feber hos barn = peritonsillær abscess. Krever antibiotika og ofte drenasje.'
+    },
+    {
+        id: 'ped-12',
+        category: 'pediatri',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er viktig å huske om medikamentdosering hos barn?',
+        options: [
+            'Bruk alltid voksendoser',
+            'Dosering baseres på kroppsvekt (mg/kg)',
+            'Barn trenger ingen medisiner',
+            'Gi alltid høyeste dose for sikkerhet'
+        ],
+        correctAnswer: 1,
+        explanation: 'Barn er ikke små voksne. Medikamentdoser beregnes ut fra kroppsvekt (mg/kg) eller kroppsoverflate. Overdosering og underdosering kan ha alvorlige konsekvenser.'
     }
 );

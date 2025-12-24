@@ -85,5 +85,85 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Håndhygiene er det viktigste enkelttiltak for å forebygge smittespredning i helsetjenesten. Hånddesinfeksjon eller håndvask skal utføres før og etter pasientkontakt.'
+    },
+    {
+        id: 'infeksjon-7',
+        category: 'infeksjon',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er typisk behandlingsvarighet for samfunnservervet pneumoni?',
+        options: [
+            '1-2 dager',
+            '5-7 dager',
+            '3-4 uker',
+            '3 måneder'
+        ],
+        correctAnswer: 1,
+        explanation: 'Ukomplisert samfunnservervet pneumoni behandles vanligvis i 5-7 dager med antibiotika. Lengre behandling ved komplikasjoner eller alvorlig sykdom.'
+    },
+    {
+        id: 'infeksjon-8',
+        category: 'infeksjon',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'MRSA står for meticillinresistent Staphylococcus aureus.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'MRSA er resistent mot meticillin og de fleste betalaktamantibiotika. Viktig å oppdage og isolere for å hindre spredning. Behandles med vancomycin eller lignende.'
+    },
+    {
+        id: 'infeksjon-9',
+        category: 'infeksjon',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En pasient med feber og nakkestivhet har purulent spinalvæske med høyt celletall og lavt glukose. Diagnose?',
+        options: [
+            'Viral meningitt',
+            'Bakteriell meningitt',
+            'Migrene',
+            'Subaraknoidalblødning'
+        ],
+        correctAnswer: 1,
+        explanation: 'Purulent spinalvæske med høy pleocytose (nøytrofile), lavt glukose og høyt protein = bakteriell meningitt. Krever umiddelbar empirisk antibiotika (ceftriaxon + ampicillin).'
+    },
+    {
+        id: 'infeksjon-10',
+        category: 'infeksjon',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Når skal blodkulturer tas ved sepsis?',
+        options: [
+            'Etter at antibiotika er gitt',
+            'Før antibiotika gis, men uten å forsinke behandling',
+            'Kun hvis pasienten har feber over 40°C',
+            'Blodkulturer er ikke nødvendig ved sepsis'
+        ],
+        correctAnswer: 1,
+        explanation: 'Blodkulturer bør tas før antibiotika for å identifisere mikroben, men skal aldri forsinke oppstart av behandling. Ta kulturer raskt, deretter antibiotika innen 1 time.'
+    },
+    {
+        id: 'infeksjon-11',
+        category: 'infeksjon',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Bredspektret antibiotika bør brukes som førstevalg ved alle infeksjoner.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'Smalspektret antibiotika foretrekkes når mulig for å redusere resistensutvikling. Bredspektret reserveres for alvorlige infeksjoner eller ukjent etiologi.'
+    },
+    {
+        id: 'infeksjon-12',
+        category: 'infeksjon',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En pasient med diabetes har feber, hevelse og krepitasjoner i huden på leggen. Hva mistenkes?',
+        options: [
+            'Vanlig erysipelas',
+            'Nekrotiserende fasciitt',
+            'Allergisk reaksjon',
+            'DVT'
+        ],
+        correctAnswer: 1,
+        explanation: 'Krepitasjoner i huden (gass i vev) + systemisk sykdom hos diabetiker = mistenk nekrotiserende fasciitt. Livstruende tilstand som krever akutt kirurgisk debridement og iv antibiotika.'
     }
 );

@@ -85,5 +85,85 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'GCS måler bevissthetsnivå via tre komponenter: Eye (øyeåpning, 1-4), Verbal (verbal respons, 1-5), Motor (motorisk respons, 1-6). Totalt 3-15 poeng.'
+    },
+    {
+        id: 'nevro-7',
+        category: 'nevrologi',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hvilke symptomer er typiske for Parkinsons sykdom?',
+        options: [
+            'Plutselige anfall og hukommelsestap',
+            'Bradykinesi, rigiditet, hviletremor og postural instabilitet',
+            'Lammelser og synstap',
+            'Feber og hodepine'
+        ],
+        correctAnswer: 1,
+        explanation: 'Parkinsons klassiske tetrade: bradykinesi (langsomme bevegelser), rigiditet (stivhet), hviletremor (pillertrilletremor), postural instabilitet. Skyldes dopaminmangel i basalgangliene.'
+    },
+    {
+        id: 'nevro-8',
+        category: 'nevrologi',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Multippel sklerose (MS) rammer kun eldre over 60 år.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'MS debuterer vanligvis i ung voksen alder (20-40 år) og rammer kvinner dobbelt så ofte som menn. Det er en autoimmun demyeliniserende sykdom i CNS.'
+    },
+    {
+        id: 'nevro-9',
+        category: 'nevrologi',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En pasient får plutselig sterk hodepine ("verste hodepinen i mitt liv") og nakkestivhet. CT-caput er normal. Hva er neste steg?',
+        options: [
+            'Sende hjem med smertestillende',
+            'Lumbalpunksjon for å utelukke subaraknoidalblødning',
+            'MR om 3 uker',
+            'Gi migreneprofylakse'
+        ],
+        correctAnswer: 1,
+        explanation: 'Thunderclap-hodepine + nakkestivhet = mistenk SAH. CT er sensitiv tidlig, men lumbalpunksjon gjøres hvis CT er negativ for å se etter xantokromi (blod i spinalvæske).'
+    },
+    {
+        id: 'nevro-10',
+        category: 'nevrologi',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er forskjellen mellom iskemisk og hemoragisk hjerneslag?',
+        options: [
+            'Det er ingen forskjell',
+            'Iskemisk skyldes blodpropp, hemoragisk skyldes blødning',
+            'Hemoragisk er mildere enn iskemisk',
+            'Iskemisk behandles med antikoagulasjon akutt'
+        ],
+        correctAnswer: 1,
+        explanation: 'Iskemisk slag (85%) skyldes blodpropp som blokkerer en arterie. Hemoragisk slag (15%) skyldes blødning i hjernen. CT skiller mellom dem og styrer behandling.'
+    },
+    {
+        id: 'nevro-11',
+        category: 'nevrologi',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Epilepsi kan ofte kontrolleres godt med antiepileptiske medikamenter.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Ca. 70% av epilepsipasienter oppnår anfallsfrihet med riktig medisin. Valg av medikament avhenger av anfallstype. Noen trenger kombinasjonsbehandling.'
+    },
+    {
+        id: 'nevro-12',
+        category: 'nevrologi',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En pasient med nydiagnostisert epilepsi har hatt to tonisk-kloniske anfall. Hva er førstevalg behandling?',
+        options: [
+            'Ingen behandling før flere anfall',
+            'Antiepileptikum som valproat, levetiracetam eller lamotrigin',
+            'Kun beroligende ved anfall',
+            'Kirurgi umiddelbart'
+        ],
+        correctAnswer: 1,
+        explanation: 'Etter to uprovoserte anfall stilles epilepsidiagnose og behandling startes. Valg av antiepileptikum avhenger av anfallstype, alder og kjønn (unngå valproat hos fertile kvinner).'
     }
 );

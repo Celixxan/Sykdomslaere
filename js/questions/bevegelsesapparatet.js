@@ -70,5 +70,100 @@ window.QuizQuestions.push(
         options: ['Sant', 'Usant'],
         correctAnswer: 1,
         explanation: 'Mange stabile ankelbrudd kan behandles konservativt med gips/ortose. Ustabile brudd med feilstilling eller leddpåvirkning krever kirurgi. Behandlingen avhenger av bruddtype.'
+    },
+    {
+        id: 'bevegelse-6',
+        category: 'bevegelsesapparatet',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er de 5 P-ene som tegn på kompartmentsyndrom?',
+        options: [
+            'Puls, Pust, Pupiller, Posisjon, Prat',
+            'Pain, Pallor, Pulselessness, Paresthesia, Paralysis',
+            'Pause, Press, Push, Pull, Poke',
+            'Pressure, Perfusion, Pulse, Position, Prognosis'
+        ],
+        correctAnswer: 1,
+        explanation: 'De 5 P-ene: Pain (smerte, spesielt ved passiv strekk), Pallor (blekhet), Pulselessness (pulsløshet), Paresthesia (prikking/nummenhet), Paralysis (lammelse). Smerte ved passiv strekk er tidligste tegn.'
+    },
+    {
+        id: 'bevegelse-7',
+        category: 'bevegelsesapparatet',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Osteoporose gir smerter før brudd oppstår.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'Osteoporose er en stille sykdom uten symptomer før brudd oppstår. Derfor er screening og forebygging viktig hos risikogrupper.'
+    },
+    {
+        id: 'bevegelse-8',
+        category: 'bevegelsesapparatet',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En mann faller fra stige og lander på føttene. Han har smerter i hælene og nedre rygg. Hva bør vurderes?',
+        options: [
+            'Kun hælfraktur',
+            'Hælfraktur og vertebralfraktur (kombinasjonsskade)',
+            'Kun muskelstrekk',
+            'Ligamentskade i ankel'
+        ],
+        correctAnswer: 1,
+        explanation: 'Fall fra høyde med landing på føttene kan gi hælfraktur (calcaneus) + kompresjonsfraktur i columna. Alltid vurdere assosierte skader ved høyenergitraumer.'
+    },
+    {
+        id: 'bevegelse-9',
+        category: 'bevegelsesapparatet',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er typisk for åpent brudd (compound fracture)?',
+        options: [
+            'Brudd uten hudskade',
+            'Brudd med kommunikasjon mellom bruddstedet og omgivelsene',
+            'Brudd som gror raskere',
+            'Brudd som ikke trenger behandling'
+        ],
+        correctAnswer: 1,
+        explanation: 'Åpent brudd har huddefekt med kommunikasjon til bruddstedet. Høy infeksjonsrisiko. Krever akutt antibiotikaprofylakse, sårstell og ofte kirurgisk debridement.'
+    },
+    {
+        id: 'bevegelse-10',
+        category: 'bevegelsesapparatet',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Ved mistanke om nakkebrudd skal nakken stabiliseres manuelt.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Ved mistanke om cervical skade skal nakken stabiliseres i nøytral posisjon (manuell inline stabilisering, deretter nakkekrage) for å forhindre sekundær ryggmargsskade.'
+    },
+    {
+        id: 'bevegelse-11',
+        category: 'bevegelsesapparatet',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'Et barn faller på utstrakt arm. Røntgen viser suprakondylær humerusfraktur. Hva er viktig å vurdere?',
+        options: [
+            'Kun immobilisering',
+            'Nevrovaskulær status – risiko for a. brachialis og n. medianus skade',
+            'Umiddelbar kirurgi alltid',
+            'Ingen oppfølging nødvendig'
+        ],
+        correctAnswer: 1,
+        explanation: 'Suprakondylær humerusfraktur hos barn kan kompromittere a. brachialis og n. medianus. Sjekk distal sirkulasjon (radialispuls, kapillær refill) og nevrologisk status.'
+    },
+    {
+        id: 'bevegelse-12',
+        category: 'bevegelsesapparatet',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hvilken test brukes for å vurdere skade på fremre korsbånd (ACL)?',
+        options: [
+            'McMurray test',
+            'Lachman test',
+            'Phalen test',
+            'Spurling test'
+        ],
+        correctAnswer: 1,
+        explanation: 'Lachman test vurderer fremre skuffebevegelighet av tibia mot femur. Positiv test indikerer ACL-ruptur. McMurray tester meniskskade.'
     }
 );

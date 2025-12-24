@@ -90,5 +90,85 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'STEMI (ST-elevasjonsinfarkt) viser ST-elevasjon i minst 2 sammenhengende avledninger. Dette indikerer transmural iskemi og krever akutt reperfusjonsbehandling (PCI eller trombolyse).'
+    },
+    {
+        id: 'hjerte-7',
+        category: 'hjertesykdommer',
+        difficulty: 'easy',
+        type: 'mcq',
+        question: 'Hva er hovedrisikoen ved ubehandlet atrieflimmer?',
+        options: [
+            'Hjerteinfarkt',
+            'Hjerneslag (tromboembolisme)',
+            'Lungebetennelse',
+            'Nyresvikt'
+        ],
+        correctAnswer: 1,
+        explanation: 'Atrieflimmer gir uregelmessig hjerterytme med risiko for blodproppdannelse i atriet. Proppen kan løsne og forårsake hjerneslag. Antikoagulasjon vurderes ut fra CHA2DS2-VASc.'
+    },
+    {
+        id: 'hjerte-8',
+        category: 'hjertesykdommer',
+        difficulty: 'medium',
+        type: 'truefalse',
+        question: 'Nitroglyserin virker ved å dilatere koronararteriene og redusere hjertets arbeidsbelastning.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Nitroglyserin er en vasodilator som utvider både koronarkar og perifere vener. Dette reduserer preload og hjertets oksygenbehov, og bedrer koronar blodgjennomstrømning.'
+    },
+    {
+        id: 'hjerte-9',
+        category: 'hjertesykdommer',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En pasient med kjent hjertesvikt våkner om natten med akutt dyspné, må sitte oppreist og hoster rosa, skummende ekspektorat. Hva er tilstanden?',
+        options: [
+            'Astmaanfall',
+            'Akutt lungeødem',
+            'Panikkanfall',
+            'Pneumothorax'
+        ],
+        correctAnswer: 1,
+        explanation: 'Rosa, skummende ekspektorat + akutt dyspné + ortopné = akutt lungeødem ved dekompensert venstresidig hjertesvikt. Krever akutt behandling med diuretika, oksygen og evt. NIV.'
+    },
+    {
+        id: 'hjerte-10',
+        category: 'hjertesykdommer',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hvilken medikamentgruppe er førstevalg ved systolisk hjertesvikt?',
+        options: [
+            'Kalsiumkanalblokkere',
+            'ACE-hemmere eller ARB',
+            'Antibiotika',
+            'Antihistaminer'
+        ],
+        correctAnswer: 1,
+        explanation: 'ACE-hemmere (eller ARB ved intoleranse) er hjørnestein i hjertesviktbehandling. De reduserer afterload, hemmer remodellering og bedrer prognose.'
+    },
+    {
+        id: 'hjerte-11',
+        category: 'hjertesykdommer',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Betablokkere skal unngås ved hjertesvikt fordi de svekker hjertefunksjonen.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'Betablokkere er en av fire pilarer i hjertesviktbehandling (sammen med ACE-hemmer, MRA og SGLT2-hemmer). De bedrer langtidsprognose ved å redusere hjertefrekvens og remodellering.'
+    },
+    {
+        id: 'hjerte-12',
+        category: 'hjertesykdommer',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En 65-åring kommer med brystsmerter i 2 timer, ST-depresjon på EKG og forhøyet troponin. Diagnose?',
+        options: [
+            'Stabil angina',
+            'STEMI',
+            'NSTEMI',
+            'Perikarditt'
+        ],
+        correctAnswer: 2,
+        explanation: 'Brystsmerter + ST-depresjon + forhøyet troponin = NSTEMI (non-ST-elevasjon hjerteinfarkt). Behandles med antitrombotisk terapi og vurderes for koronar angiografi.'
     }
 );

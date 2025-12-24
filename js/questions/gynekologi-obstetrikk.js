@@ -70,5 +70,100 @@ window.QuizQuestions.push(
         options: ['Sant', 'Usant'],
         correctAnswer: 1,
         explanation: 'Ca. 95% av ektopiske svangerskap er i egglederen, men de kan også forekomme i ovariet, cervix, bukhulen eller tidligere keisersnittarr.'
+    },
+    {
+        id: 'gyn-6',
+        category: 'gynekologi-obstetrikk',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er typiske symptomer på ektopisk graviditet?',
+        options: [
+            'Ingen symptomer',
+            'Magesmerter, vaginal blødning og positiv graviditetstest',
+            'Kun kvalme',
+            'Feber og utslett'
+        ],
+        correctAnswer: 1,
+        explanation: 'Ektopisk graviditet gir ofte ensidig magesmerter, uregelmessig vaginalblødning og positiv graviditetstest. Kan føre til livstruende blødning ved ruptur.'
+    },
+    {
+        id: 'gyn-7',
+        category: 'gynekologi-obstetrikk',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Svangerskapsdiabetes forsvinner alltid etter fødselen.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'Svangerskapsdiabetes forsvinner ofte etter fødselen, men kvinnen har betydelig økt risiko for type 2 diabetes senere i livet. Oppfølging med OGTT anbefales.'
+    },
+    {
+        id: 'gyn-8',
+        category: 'gynekologi-obstetrikk',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En gravid i uke 35 har plutselig vaginalblødning, smertefull og hard uterus. CTG viser føtal bradykardi. Diagnose?',
+        options: [
+            'Placenta previa',
+            'Abruptio placentae (placentaløsning)',
+            'Normal fødsel',
+            'Urinveisinfeksjon'
+        ],
+        correctAnswer: 1,
+        explanation: 'Smertefullt abdomen + smertefull, hard uterus + vaginalblødning + føtal distress = placentaløsning. Akutt livstruende tilstand som ofte krever hastekeisersnitt.'
+    },
+    {
+        id: 'gyn-9',
+        category: 'gynekologi-obstetrikk',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er postpartumblødning (PPH)?',
+        options: [
+            'Lett blødning etter fødsel',
+            'Blødning >500 ml etter vaginal fødsel eller >1000 ml etter keisersnitt',
+            'Blødning før fødsel',
+            'Menstruasjon etter fødsel'
+        ],
+        correctAnswer: 1,
+        explanation: 'PPH er en potensielt livstruende tilstand. Vanligste årsaker er atoni (80%), traumer, retinert vev og koagulopati ("de 4 T-ene": Tone, Trauma, Tissue, Thrombin).'
+    },
+    {
+        id: 'gyn-10',
+        category: 'gynekologi-obstetrikk',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'HELLP-syndrom er en alvorlig komplikasjon av preeklampsi.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'HELLP = Hemolysis, Elevated Liver enzymes, Low Platelets. Livstruende komplikasjon av alvorlig preeklampsi. Krever ofte akutt forløsning.'
+    },
+    {
+        id: 'gyn-11',
+        category: 'gynekologi-obstetrikk',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En gravid kvinne i uke 28 har smertefri vaginalblødning. Ultralyd viser placenta som dekker cervix. Diagnose?',
+        options: [
+            'Placentaløsning',
+            'Placenta previa',
+            'Tidlig fødsel',
+            'Cervixinsuffisiens'
+        ],
+        correctAnswer: 1,
+        explanation: 'Smertefri vaginalblødning i siste trimester + placenta over indre mormunn = placenta previa. Vaginalundersøkelse er kontraindisert. Keisersnitt planlegges.'
+    },
+    {
+        id: 'gyn-12',
+        category: 'gynekologi-obstetrikk',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er PCOS (polycystisk ovariesyndrom)?',
+        options: [
+            'En infeksjon i eggstokkene',
+            'En hormonell forstyrrelse med uregelmessig menstruasjon og hyperandrogenisme',
+            'Graviditet i eggstokken',
+            'Kreft i eggstokkene'
+        ],
+        correctAnswer: 1,
+        explanation: 'PCOS kjennetegnes av oligo/anovulasjon, hyperandrogenisme (akne, hirsutisme) og polycystiske ovarier på ultralyd. Vanlig årsak til infertilitet.'
     }
 );

@@ -85,5 +85,85 @@ window.QuizQuestions.push(
         ],
         correctAnswer: 1,
         explanation: 'Ved anafylaksi etter adrenalin: væskeresuscitering, sikre luftveier, observer. Adrenalin kan gjentas hvert 5. min. Antihistaminer og steroider er tilleggsbehandling.'
+    },
+    {
+        id: 'akutt-7',
+        category: 'akuttmedisin',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er riktig kompresjonsfrekvens ved HLR hos voksne?',
+        options: [
+            '60-80 per minutt',
+            '100-120 per minutt',
+            '140-160 per minutt',
+            '80-100 per minutt'
+        ],
+        correctAnswer: 1,
+        explanation: 'HLR-retningslinjer anbefaler 100-120 kompresjoner per minutt med dybde 5-6 cm. Komplett brystveggs tilbakefjæring mellom kompresjonene er viktig.'
+    },
+    {
+        id: 'akutt-8',
+        category: 'akuttmedisin',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Ved sjokk er blekhet, kaldsvette og rask puls vanlige tegn.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Sjokk gir kompensatoriske tegn: takykardi, blek/kaldsvett hud, forlenget kapillær refill, angst/uro. Ved dekompensert sjokk kommer hypotensjon og bevissthetsendring.'
+    },
+    {
+        id: 'akutt-9',
+        category: 'akuttmedisin',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En pasient med brystsmerter har BT 80/50, kald/klam, takykard og forvirret. Hva er tilstanden?',
+        options: [
+            'Stabil angina',
+            'Kardiogent sjokk',
+            'Panikkanfall',
+            'Hyperventilering'
+        ],
+        correctAnswer: 1,
+        explanation: 'Brystsmerter + hypotensjon + sjokktegn = kardiogent sjokk, sannsynligvis fra akutt hjerteinfarkt med pumpsvikt. Krever akutt PCI, inotropi og evt. mekanisk sirkulasjonsstøtte.'
+    },
+    {
+        id: 'akutt-10',
+        category: 'akuttmedisin',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hvordan beregnes brannskadeareal hos voksne (Wallaces 9-regel)?',
+        options: [
+            'Hode = 18%, hver arm = 9%',
+            'Hode = 9%, hver arm = 9%, bryst = 18%',
+            'Alt er 10% hver',
+            'Kun måling med linjal'
+        ],
+        correctAnswer: 1,
+        explanation: 'Wallaces 9-regel: Hode 9%, hver arm 9%, bryst 18%, rygg 18%, hvert ben 18%, perineum 1%. Pasientens håndflate = ca. 1% av kroppsoverflaten.'
+    },
+    {
+        id: 'akutt-11',
+        category: 'akuttmedisin',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Ved drukning skal man alltid starte HLR med innblåsinger før kompresjoner.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 0,
+        explanation: 'Ved drukning er hypoksi hovedproblemet. Man starter med 5 innblåsinger før kompresjoner (i motsetning til standard HLR). Oksygenering er kritisk.'
+    },
+    {
+        id: 'akutt-12',
+        category: 'akuttmedisin',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En pasient har sterk allergisk reaksjon med stridor. Adrenalin IM og inhalasjoner hjelper ikke. Hva er neste steg?',
+        options: [
+            'Gi mer antihistamin',
+            'Forbered kirurgisk luftvei (krikotomi) ved truende obstruksjon',
+            'Vent og observer',
+            'Send hjem'
+        ],
+        correctAnswer: 1,
+        explanation: 'Ved truende luftveisobstruksjon som ikke responderer på adrenalin, må man være forberedt på kirurgisk luftvei (krikotomi). Intubering kan være vanskelig ved ødem.'
     }
 );

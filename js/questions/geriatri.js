@@ -70,5 +70,100 @@ window.QuizQuestions.push(
         options: ['Sant', 'Usant'],
         correctAnswer: 1,
         explanation: 'Fall hos eldre har ofte flere årsaker: legemidler, synssvekkelse, muskelsvakhet, delirium, miljøfaktorer. Systematisk fallforebygging kan redusere fallrisiko betydelig.'
+    },
+    {
+        id: 'geriatri-6',
+        category: 'geriatri',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er frailty (skrøpelighet)?',
+        options: [
+            'En spesifikk sykdom',
+            'Redusert fysiologisk reserve som gir økt sårbarhet for stressorer',
+            'Kun vekttap',
+            'Normal aldring'
+        ],
+        correctAnswer: 1,
+        explanation: 'Frailty er et syndrom med redusert reserve og motstandskraft. Kjennetegnes av vekttap, svakhet, tretthet, langsom ganghastighet og lav aktivitet. Øker risiko for fall og død.'
+    },
+    {
+        id: 'geriatri-7',
+        category: 'geriatri',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Eldre har alltid samme medikamentdoser som yngre voksne.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'Eldre har ofte redusert nyre- og leverfunksjon, endret kroppssammensetning og økt følsomhet for medikamenter. "Start low, go slow" er et viktig prinsipp.'
+    },
+    {
+        id: 'geriatri-8',
+        category: 'geriatri',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En 88-åring på 8 faste medisiner faller hjemme og legges inn. Blodtrykk målt liggende og stående viser stort fall. Hva vurderes?',
+        options: [
+            'Ingen tiltak',
+            'Ortostatisk hypotensjon – vurder legemiddelgjennomgang',
+            'Øke antihypertensiva',
+            'Kun fysioterapi'
+        ],
+        correctAnswer: 1,
+        explanation: 'Ortostatisk hypotensjon er vanlig hos eldre og forverres av medikamenter. Legemiddelgjennomgang er essensielt. Seponere/redusere hypotensiva, diuretika og psykofarmaka.'
+    },
+    {
+        id: 'geriatri-9',
+        category: 'geriatri',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er typiske tegn på delirium hos eldre?',
+        options: [
+            'Gradvis hukommelsestap over år',
+            'Akutt endret bevissthet, fluktuerende oppmerksomhet, forvirring',
+            'Kun depressive symptomer',
+            'Ingen observerbare tegn'
+        ],
+        correctAnswer: 1,
+        explanation: 'Delirium kjennetegnes av akutt debut, fluktuerende forløp, uoppmerksomhet, desorganisert tenkning og endret bevissthetsnivå. Ofte forverret om kvelden ("sundowning").'
+    },
+    {
+        id: 'geriatri-10',
+        category: 'geriatri',
+        difficulty: 'easy',
+        type: 'truefalse',
+        question: 'Infeksjoner hos eldre gir alltid feber.',
+        options: ['Sant', 'Usant'],
+        correctAnswer: 1,
+        explanation: 'Eldre kan ha alvorlige infeksjoner uten feber (afebrile). Forvirring, funksjonsfall eller fallerende almenntilstand kan være eneste tegn. Lav terskel for infeksjonsutredning.'
+    },
+    {
+        id: 'geriatri-11',
+        category: 'geriatri',
+        difficulty: 'exam',
+        type: 'case',
+        question: 'En 90-åring med demens slutter plutselig å spise og drikke etter lårhalsbrudd. Hva er viktig?',
+        options: [
+            'Tvangsernæring umiddelbart',
+            'Vurdere delirium, smerte, depresjon, medikamenter og etiske forhold',
+            'Ignorere problemet',
+            'Kun gi iv væske'
+        ],
+        correctAnswer: 1,
+        explanation: 'Spisevegring hos eldre med demens krever helhetsvurdering: delirium? smerte? depresjon? medikamenter? Ved livets slutt: palliative prinsipper og etiske vurderinger.'
+    },
+    {
+        id: 'geriatri-12',
+        category: 'geriatri',
+        difficulty: 'medium',
+        type: 'mcq',
+        question: 'Hva er CAM (Confusion Assessment Method)?',
+        options: [
+            'En medisin mot forvirring',
+            'Et screeningverktøy for delirium',
+            'En type kamera',
+            'En treningsmetode'
+        ],
+        correctAnswer: 1,
+        explanation: 'CAM er et validert verktøy for å identifisere delirium. Vurderer akutt debut, uoppmerksomhet, desorganisert tenkning og endret bevissthetsnivå.'
     }
 );

@@ -4,7 +4,7 @@ Quiz-webapp for eksamensforberedelse i sykdomslære – laget for sykepleiestude
 
 ## Funksjoner
 
-- **91 spørsmål** – fordelt på 17 kategorier
+- **204 spørsmål** – fordelt på 17 kategorier (12 per kategori)
 - **Tre spørsmålstyper** – flervalg, sant/usant og kasus
 - **Vanskelighetsgrader** – lett, medium, eksamen
 - **Treningsmodus** – umiddelbar feedback med forklaringer
@@ -16,23 +16,23 @@ Quiz-webapp for eksamensforberedelse i sykdomslære – laget for sykepleiestude
 
 | Kategori | Spørsmål |
 |----------|----------|
-| Karsykdommer | 5 |
-| Hjertesykdommer | 6 |
-| Lungesykdommer | 6 |
-| Nyrer og urinveier | 5 |
-| Gastro | 6 |
-| Endokrinologi | 5 |
-| Hematologi | 5 |
-| Infeksjon | 6 |
-| Nevrologi | 6 |
-| Bevegelsesapparatet | 5 |
-| Revmatologi | 5 |
-| Gynekologi/obstetrikk | 5 |
-| Pediatri | 5 |
-| Akuttmedisin | 6 |
-| Onkologi | 5 |
-| Geriatri | 5 |
-| Øyesykdommer | 5 |
+| Karsykdommer | 12 |
+| Hjertesykdommer | 12 |
+| Lungesykdommer | 12 |
+| Nyrer og urinveier | 12 |
+| Gastro | 12 |
+| Endokrinologi | 12 |
+| Hematologi | 12 |
+| Infeksjon | 12 |
+| Nevrologi | 12 |
+| Bevegelsesapparatet | 12 |
+| Revmatologi | 12 |
+| Gynekologi/obstetrikk | 12 |
+| Pediatri | 12 |
+| Akuttmedisin | 12 |
+| Onkologi | 12 |
+| Geriatri | 12 |
+| Øyesykdommer | 12 |
 
 ## Kjøre lokalt
 
